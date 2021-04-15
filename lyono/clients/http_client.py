@@ -83,7 +83,7 @@ class HTTPClient(BaseClient):
         super().__init__(**data)
 
     def step(self, data: HTTPInput) -> httpx.Response:
-        return self.strategy.step(HTTPInput)
+        return self.strategy.step(data)
 
 
 if __name__ == "__main__":
